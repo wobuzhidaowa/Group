@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; Strawberry [0.1] documentation</title>
+  <title>Non-functional Requirements &mdash; Strawberry [0.1] documentation</title>
   
 
   
@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Constraints" href="constraints.html" />
+    <link rel="prev" title="Functional Requirements" href="functional_requirements.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -60,7 +62,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -77,10 +79,19 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Foreword</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional_requirements.html">Functional Requirements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="non-functional_requirements.html">Non-functional Requirements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Non-functional Requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#response-time">Response Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#safety">Safety</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#data-backup">Data backup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-encryption">Data encryption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#operation-log">Operation log</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="constraints.html">Constraints</a></li>
 <li class="toctree-l1"><a class="reference internal" href="change_cases.html">Change Cases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="milestones.html">Milestones</a></li>
@@ -131,12 +142,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Search</li>
+      <li>Non-functional Requirements</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/non-functional_requirements.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -148,24 +161,47 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="non-functional-requirements">
+<h1>Non-functional Requirements<a class="headerlink" href="#non-functional-requirements" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="response-time">
+<h2>Response Time<a class="headerlink" href="#response-time" title="Permalink to this headline">¶</a></h2>
+<p>&lt;5 seconds.</p>
+</div>
+<div class="section" id="safety">
+<h2>Safety<a class="headerlink" href="#safety" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Ensure the data security, communication information security and file security in the process of using the software.</p>
+</div>
+<div class="section" id="data-backup">
+<h3>Data backup<a class="headerlink" href="#data-backup" title="Permalink to this headline">¶</a></h3>
+<p>Backup the files uploaded by the user and the analysis result data to deal with the damage and loss of the data.</p>
+</div>
+<div class="section" id="data-encryption">
+<h3>Data encryption<a class="headerlink" href="#data-encryption" title="Permalink to this headline">¶</a></h3>
+<p>Encrypt important information according to a certain algorithm, such as household registration order, important parameters, etc.</p>
+</div>
+<div class="section" id="operation-log">
+<h3>Operation log<a class="headerlink" href="#operation-log" title="Permalink to this headline">¶</a></h3>
+<p>The software should be able to record all errors that occur while the system is running, including native and network errors. These errors make it easier for developers to find the cause of the error and improve it. The log also records the user’s critical operation information.</p>
+</div>
+</div>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="constraints.html" class="btn btn-neutral float-right" title="Constraints" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="functional_requirements.html" class="btn btn-neutral" title="Functional Requirements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -205,7 +241,6 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -218,14 +253,7 @@
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
-   
-
+  </script> 
 
 </body>
 </html>

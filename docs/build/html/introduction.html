@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; Strawberry [0.1] documentation</title>
+  <title>Foreword &mdash; Strawberry [0.1] documentation</title>
   
 
   
@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Functional Requirements" href="functional_requirements.html" />
+    <link rel="prev" title="Software Requirements Specification for OMG Version 0.1" href="index.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -60,7 +62,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -77,8 +79,13 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Foreword</a></li>
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Foreword</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#background">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#definition">Definition</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="functional_requirements.html">Functional Requirements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="non-functional_requirements.html">Non-functional Requirements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="constraints.html">Constraints</a></li>
@@ -131,12 +138,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Search</li>
+      <li>Foreword</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/introduction.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -148,24 +157,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="foreword">
+<h1>Foreword<a class="headerlink" href="#foreword" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<p>The purpose of this document is to introduce the requirements contained in OMG APP in detail , so that users can confirm the exact requirements of the product and developers can design codes according to the requirements.
+The following descriptions will be combined with text descriptions, illustrations, and interface prototypes to describe OMG APP ‘s function, performance, user interface, external interfaces, and various responses to user operations.
+Expected readers of this document are clients (Biologist, Project Manager, developer.</p>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>The software to be developed this time is a system for uploading gene expression files and quickly getting differently expressed genes.The project is mainly aimed at helping biological scientists deal with gene expression data more conveniently and quickly.
+Through the software, users upload gene expression files on mobile devices. After some calculation and analysis, the software gives back to the user a processed form and scatter plot. Accepting the file, the software will return a table of differentially expressed genes and a scatter plot of these genes whose X-axis is control and Y-axis is treatment. If an invalid gene expression is given, the web application returns a page informing the user to provide the correct format.</p>
+</div>
+<div class="section" id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="functional_requirements.html" class="btn btn-neutral float-right" title="Functional Requirements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Software Requirements Specification for OMG Version 0.1" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -205,7 +228,6 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -218,14 +240,7 @@
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
-   
-
+  </script> 
 
 </body>
 </html>

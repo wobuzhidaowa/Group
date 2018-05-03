@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Welcome to Strawberry’s documentation! &mdash; Strawberry [0.1] documentation</title>
+  <title>Software Requirements Specification for OMG Version 0.1 &mdash; Strawberry [0.1] documentation</title>
   
 
   
@@ -28,7 +28,8 @@
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Foreword" href="introduction.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -77,12 +78,17 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Welcome to Strawberry’s documentation!</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Foreword</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functional_requirements.html">Functional Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="non-functional_requirements.html">Non-functional Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints.html">Constraints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="change_cases.html">Change Cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestones.html">Milestones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices.html">Appendices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
-</div>
+
             
           
         </div>
@@ -126,7 +132,7 @@
     
       <li><a href="#">Docs</a> &raquo;</li>
         
-      <li>Welcome to Strawberry’s documentation!</li>
+      <li>Software Requirements Specification for OMG Version 0.1</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -145,18 +151,72 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="welcome-to-strawberry-s-documentation">
-<h1>Welcome to Strawberry’s documentation!<a class="headerlink" href="#welcome-to-strawberry-s-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="software-requirements-specification-for-omg-version-0-1">
+<h1>Software Requirements Specification for OMG Version 0.1<a class="headerlink" href="#software-requirements-specification-for-omg-version-0-1" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This document describes the Little Hill Lab’s initial requirements for an online application (Oh My Genes) which allows our scientists to upload gene expression files and quickly get differentially expressed genes.</p>
+</div>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
-</div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Foreword</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#background">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#definition">Definition</a></li>
 </ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="functional_requirements.html">Functional Requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functional_requirements.html#functions">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional_requirements.html#register">register</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional_requirements.html#login">Login</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functional_requirements.html#other-page">Other Page</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="non-functional_requirements.html">Non-functional Requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="non-functional_requirements.html#response-time">Response Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="non-functional_requirements.html#safety">Safety</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="non-functional_requirements.html#data-backup">Data backup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="non-functional_requirements.html#data-encryption">Data encryption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="non-functional_requirements.html#operation-log">Operation log</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="constraints.html">Constraints</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="constraints.html#time-constraints">Time constraints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constraints.html#technical-constraints">Technical constraints</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="change_cases.html">Change Cases</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="change_cases.html#may-2018">May 2018</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="milestones.html">Milestones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices.html">Appendices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="group-information">
+<h2>Group Information<a class="headerlink" href="#group-information" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="group-name">
+<h3>Group Name<a class="headerlink" href="#group-name" title="Permalink to this headline">¶</a></h3>
+<p>Strawberry</p>
+</div>
+<div class="section" id="group-member">
+<h3>Group Member<a class="headerlink" href="#group-member" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>崔宸玮, 201632120118, <a class="reference external" href="mailto:290849160&#37;&#52;&#48;qq&#46;com">290849160<span>&#64;</span>qq<span>&#46;</span>com</a></li>
+<li>凌静, 201632120108, <a class="reference external" href="mailto:2912607882&#37;&#52;&#48;qq&#46;com">2912607882<span>&#64;</span>qq<span>&#46;</span>com</a></li>
+</ul>
+</div>
+<div class="section" id="last-updated">
+<h3>Last Updated<a class="headerlink" href="#last-updated" title="Permalink to this headline">¶</a></h3>
+<p>2 May 2018</p>
+</div>
+</div>
 </div>
 
 
@@ -164,6 +224,13 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="introduction.html" class="btn btn-neutral float-right" title="Foreword" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
   
 
   <hr/>
